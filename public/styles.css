@@ -1,0 +1,84 @@
+/* public/styles.css */
+.one {
+    padding: 10px;
+    background-color: tomato;
+    color: white;
+}
+
+#show-create-form {
+    background-color: tomato;
+    color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    color: #333;
+}
+
+#student-list {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.student-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid tomato;
+    margin: 10px auto;
+}
+
+.student-info {
+    margin-right: auto;
+}
+
+button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button.edit {
+    background-color: blue;
+    color: white;
+}
+
+button.delete {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Styles for create student form */
+#create-student-form {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#create-student-form input {
+    padding: 8px;
+    font-size: 14px;
+    width: 100%;
+}
+
+#create-student-form button {
+    padding: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+}

@@ -1,3 +1,4 @@
+const path = require("path");
 const express = require("express");
 const mongoose = require("mongoose");
 const PORT = process.env.PORT || 5000;
@@ -10,9 +11,12 @@ const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use(express.static(path.join(__dirname, "public")));
+app.set("view engine", "ejs"); //
+app.set("views", path.join(__dirname, "views"));
 
 app.get("/", (req, res) => {
-  return res.send("Welcome to the site");
+  return res.render("index");
 });
 app.post("/api/students", async (req, res) => {
   try {
